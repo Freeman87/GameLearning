@@ -17,6 +17,8 @@ public class MenuUIHandler : MonoBehaviour
     public void NewColorSelected(Color color)
     {
         // add code here to handle when a color is selected
+        Console.WriteLine(color.ToString());
+        MainManager.Instance.TeamColor = color;
     }
 
     private void Start()
